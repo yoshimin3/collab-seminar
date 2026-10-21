@@ -77,6 +77,26 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 12p
 .sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(251,248,240,.96);border-top:1px solid #e3dccb;padding:10px 16px;z-index:10}
 .sticky a{display:block;max-width:420px;margin:0 auto;background:linear-gradient(135deg,#ff9a76 0%,#f0715a 100%);color:#fff;text-align:center;text-decoration:none;font-weight:700;padding:13px;border-radius:999px}
 </style>
+<style>
+/* 文字は大きめ・太め・はっきり（2026-10-22 ③に決定） */
+.blk{display:block}
+dd span,ol.flow li span,details p span{display:inline-block}
+.speaker .role span,.plan .n span,.speaker .bk span:not(.blk){display:inline-block}
+body{font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;font-size:17px;font-weight:600;line-height:1.9}
+h2,.card h3,.speaker h3,.plan .p,.plan .t,.btn{font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
+h2{font-size:28px;font-weight:800}
+ul.check li{font-size:19px;font-weight:700;padding:13px 0 13px 34px}
+.card h3{font-size:21px;font-weight:800}.card .who{font-size:16px;font-weight:800}.card p{font-size:18px;font-weight:600}
+.speaker h3{font-size:23px;font-weight:800}.speaker .role{font-size:15px;font-weight:700;color:#5c4d42}.speaker .bk{font-size:17px;font-weight:700}
+dt{font-size:15px;font-weight:800}dd{font-size:19px;font-weight:700}dd small{font-size:15px;font-weight:600;color:#5c4d42}
+.plan .t{font-size:18px;font-weight:800}.plan .n{font-size:15px;font-weight:700;color:#5c4d42}.plan .p{font-size:34px}
+.btn{font-size:21px;font-weight:800}
+.note{font-size:15px;font-weight:600}
+details p{font-size:17px;font-weight:600}summary{font-size:18px;font-weight:800}
+.flow li,ol.flow li{font-size:18px;font-weight:600}
+footer{font-size:14px;font-weight:600}
+.sticky a{font-size:19px;font-weight:800;font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
+</style>
 </head>
 <body>
 
@@ -114,13 +134,13 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 12p
 
 <section>
   <div class="wrap">
-    <h2>お話しする人</h2>
+    <h2>主催はこんな人</h2>
     <div class="speaker">
       <div><img class="photo" src="hanawa.jpg" alt="塙 真弓"><img class="book" src="book_hanawa.png" alt="自分を愛することからすべてが始まる"></div>
       <div>
         <h3>塙 真弓</h3>
-        <div class="role">感謝の心まんまるの会 代表<br>自己肯定感ナビゲーター</div>
-        <div class="bk">著書<br>『自分を愛することから<span>すべてが始まる』</span></div>
+        <div class="role"><span>感謝の心まんまるの会 代表</span> <span>自己肯定感ナビゲーター</span></div>
+        <div class="bk"><span class="blk">著書</span><span>『自分を愛することから</span> <span>すべてが始まる』</span></div>
       </div>
     </div>
     <div class="speaker">
@@ -128,7 +148,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 12p
       <div>
         <h3>齋藤 好美</h3>
         <div class="role">食べながら痩せるダイエットの専門家</div>
-        <div class="bk">著書<br>『魔法の比率は3:2:1<span>お弁当箱ダイエット』</span></div>
+        <div class="bk"><span class="blk">著書</span><span>『魔法の比率は3:2:1</span> <span>お弁当箱ダイエット』</span></div>
       </div>
     </div>
   </div>
@@ -139,8 +159,8 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 12p
     <h2>日時と場所</h2>
     <dl class="info">
       <div><dt>日時</dt><dd>2027年1月17日（日）10:30〜12:30</dd></div>
-      <div><dt>会場</dt><dd>TSUTAYA BOOKSTORE 恵比寿ガーデンプレイス店<small>東京都渋谷区恵比寿4-20-7 恵比寿ガーデンプレイス センタープラザ地下1階<br>JR恵比寿駅から、動く歩道（スカイウォーク）で歩いて約5分</small></dd></div>
-      <div><dt>ランチコンサル</dt><dd>ランチは13時からです<small>セミナーのあと、近くのお店へ移動します。お店は、お申し込みされた方にメールでお知らせします</small></dd></div>
+      <div><dt>会場</dt><dd><span>TSUTAYA BOOKSTORE</span> <span>恵比寿ガーデンプレイス店</span><small><span>東京都渋谷区恵比寿4-20-7</span> <span>恵比寿ガーデンプレイス</span> <span>センタープラザ地下1階</span><span class="blk"></span>JR恵比寿駅から、動く歩道（スカイウォーク）で歩いて約5分</small></dd></div>
+      <div><dt>ランチコンサル</dt><dd>ランチは13時からです<small><span>セミナーのあと、近くのお店へ移動します。</span> <span>お店は、お申し込みされた方に</span> <span>メールでお知らせします</span></small></dd></div>
       <div><dt>オンライン</dt><dd>Zoomで参加できます</dd></div>
     </dl>
   </div>
@@ -151,7 +171,7 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 12p
     <h2>参加費（税込）</h2>
     <div class="plans">
       <div class="plan"><div class="t">リアル参加</div><div class="n">セミナーのみ</div><div class="p">3,800<small>円</small></div></div>
-      <div class="plan main"><div class="t">リアル参加＋ランチ（限定6名）</div><div class="n">セミナー 3,800円＋<br>イタリアンコースのランチ 5,000円</div><div class="p">8,800<small>円</small></div></div>
+      <div class="plan main"><div class="t">リアル参加＋ランチ（限定6名）</div><div class="n"><span>セミナー 3,800円＋</span> <span>イタリアンコースのランチ 5,000円</span></div><div class="p">8,800<small>円</small></div></div>
       <div class="plan"><div class="t">オンライン参加</div><div class="n">Zoom</div><div class="p">3,000<small>円</small></div></div>
     </div>
     <p class="note">ランチ付きは6名限定です。</p>
@@ -163,10 +183,10 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 12p
   <div class="wrap">
     <h2>お申し込みの流れ</h2>
     <ol class="flow">
-      <li>お申し込みフォームに、参加方法などを入力します</li>
-      <li>確認のメールが届きます（振込先とPayPalのリンクつき）</li>
-      <li>銀行振込、またはPayPalでお支払いください</li>
-      <li>入金を確認したら、確認のメールをお送りします（オンラインの方はZoomのURLも）</li>
+      <li><span>お申し込みフォームに、</span> <span>参加方法などを入力します</span></li>
+      <li><span>確認のメールが届きます</span> <span>（振込先とPayPalのリンクつき）</span></li>
+      <li><span>銀行振込、</span> <span>またはPayPalでお支払いください</span></li>
+      <li><span>入金を確認したら、</span> <span>確認のメールをお送りします</span> <span>（オンラインの方はZoomのURLも）</span></li>
     </ol>
   </div>
 </section>
@@ -183,8 +203,8 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:28px 20px 12p
 </section>
 
 <footer>
-  主催：塙 真弓・齋藤 好美<br>
-  お問い合わせ：info@bi-balance.com
+  <span class="blk">主催：塙 真弓・齋藤 好美</span>
+  <span class="blk">お問い合わせ：info@bi-balance.com</span>
 </footer>
 
 <div class="sticky"><a class="apply-link" href="https://1lejend.com/stepmail/kd.php?no=frwxHSe">お申し込みはこちら</a></div>
