@@ -128,6 +128,22 @@ footer{font-size:14px;font-weight:600}
 </style>
 <style>.infowrap dd small.limit{display:block;margin-top:8px;font-size:18px;font-weight:800;color:#c8442f}</style>
 <style>.infowrap dd small .route{display:block;margin-top:2px}.infowrap dd small .route span{display:inline-block}</style>
+<style>
+/* プロフィール: 長い文のまとまりは、幅に収まらないとき途中で折り返してよい（はみ出し防止） */
+.speaker .prof{overflow-wrap:anywhere;word-break:normal;line-break:strict}
+.speaker .prof span{display:inline;white-space:normal}
+.speaker .prof .k{display:inline-block;max-width:100%}
+.speaker .prof .sep{display:block;height:0}
+</style>
+<style>
+/* 主催カードの幅を画面に収める（スマホで右にはみ出さない） */
+.speaker{min-width:0;max-width:100%}
+.speaker>*{min-width:0}
+.speaker .prof{grid-column:1/-1;min-width:0;max-width:100%;width:100%;word-break:break-word}
+.speaker .prof span{max-width:100%}
+.speaker .prof .k{display:inline-block}
+.speaker .prof .blk{display:block;height:0}
+</style>
 </head>
 <body>
 
@@ -173,7 +189,7 @@ footer{font-size:14px;font-weight:600}
         <div class="role"><span>感謝の心まんまるの会 代表</span> <span>自己肯定感ナビゲーター</span></div>
       </div>
       <img class="book" src="book_hanawa.png" alt="自分を愛することからすべてが始まる">
-      <p class="prof"><span>二つの難病と乳がんの経験から</span><span>「感謝の心まんまるの会」を設立。</span> <span>子供支援のチャリティーコンサートや</span><span>女性支援イベントを通じ、</span><span>女性の自己肯定感を高める活動を続けています。</span> <span>著書『自分を愛することからすべてが始まる』を携えて</span><span>全国で講演し、</span><span>本の収益は子どもの施設へ寄付。</span> <span>女性の笑顔は世界を救う、と信じて。</span></p>
+      <p class="prof"><span class="k">二つの難病と乳がんの経験から</span><span>「感謝の心まんまるの会」を設立。</span> <span>子供支援のチャリティーコンサートや</span><span class="k">女性支援イベントを通じ、</span><span>女性の自己肯定感を高める活動を続けています。</span> <span>著書『自分を愛することからすべてが始まる』を携えて</span><span class="k">全国で講演し、</span><span class="k">本の収益は子どもの施設へ寄付。</span> <span>女性の笑顔は世界を救う、と信じて。</span></p>
     </div>
     <div class="speaker">
       <img class="photo" src="yoshimi.jpg" alt="齋藤 好美">
@@ -182,7 +198,7 @@ footer{font-size:14px;font-weight:600}
         <div class="role">食べながら痩せるダイエットの専門家</div>
       </div>
       <img class="book" src="book_yoshimi.jpg" alt="魔法の比率は3:2:1 お弁当箱ダイエット">
-      <p class="prof"><span>30年間、ダイエットとリバウンドを繰り返し、</span><span>太っているのに「栄養失調」と診断される。</span> <span>その経験から、食事制限に頼らず</span><span>栄養バランスを重視したダイエットメソッドを考案し、</span> <span>自身も計15kgの減量に成功。</span><span class="blk"></span>著書は<span>『コンビニ3品ダイエット』（かんき出版）</span>、<span>『魔法の比率は3:2:1 お弁当箱ダイエット』（あさ出版）</span></p>
+      <p class="prof"><span>30年間、ダイエットとリバウンドを繰り返し、</span><span>太っているのに「栄養失調」と診断される。</span> <span class="k">その経験から、食事制限に頼らず</span><span>栄養バランスを重視したダイエットメソッドを考案し、</span> <span class="k">自身も計15kgの減量に成功。</span><span class="blk"></span>著書は<span>『コンビニ3品ダイエット』（かんき出版）</span>、<span>『魔法の比率は3:2:1 お弁当箱ダイエット』（あさ出版）</span></p>
     </div>
   </div>
 </section>
