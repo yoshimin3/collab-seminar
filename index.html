@@ -110,6 +110,22 @@ footer{font-size:14px;font-weight:600}
 <style>.plan .t span{display:inline-block}.plan.main .t{line-height:1.55}</style>
 <style>.speaker h3 small{font-size:15px;font-weight:700;color:#5c4d42;margin-left:8px;display:inline-block}.speaker .prof{grid-column:1/-1;font-size:17px;font-weight:600;line-height:1.9;margin-top:4px;padding-top:12px;border-top:1px dashed #d8d1bf}.speaker .prof span{display:inline-block}.speaker .prof .blk{display:block;height:0}</style>
 <style>.venue{display:block;width:100%;height:auto;border-radius:12px;margin-top:12px}</style>
+<style>
+/* 日時と場所: 文字を大きく。パソコンは左に情報・右に店の写真 */
+.infowrap{display:block}
+.infowrap dl.info{padding:10px 22px}
+.infowrap dt{font-size:18px;font-weight:800;color:#8a6a2a;letter-spacing:.04em}
+.infowrap dd{font-size:23px;font-weight:800;line-height:1.55}
+.infowrap dd small{font-size:17px;font-weight:700;color:#4a3c32;line-height:1.7;margin-top:4px}
+.infowrap .venue{margin-top:16px}
+.infowrap dd small span{display:inline-block}
+@media(min-width:900px){
+  section.alt .wrap.wide{max-width:1040px}
+  .infowrap{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center}
+  .infowrap .venue{margin-top:0;height:100%;max-height:520px;object-fit:cover}
+  .infowrap dd{font-size:26px}.infowrap dd small{font-size:19px}.infowrap dt{font-size:20px}
+}
+</style>
 </head>
 <body>
 
@@ -170,15 +186,16 @@ footer{font-size:14px;font-weight:600}
 </section>
 
 <section class="alt">
-  <div class="wrap">
+  <div class="wrap wide">
     <h2>日時と場所</h2>
-    <dl class="info">
-      <div><dt>日時</dt><dd>2027年1月17日（日）10:30〜12:30</dd></div>
-      <div><dt>会場</dt><dd><span>TSUTAYA BOOKSTORE</span> <span>恵比寿ガーデンプレイス店</span><small><span>東京都渋谷区恵比寿4-20-7</span> <span>恵比寿ガーデンプレイス</span> <span>センタープラザ地下1階</span><span class="blk"></span>JR恵比寿駅から、動く歩道（スカイウォーク）で歩いて約5分</small>
-        <img class="venue" src="shop-gaikan.jpg" alt="TSUTAYA BOOKSTORE 恵比寿ガーデンプレイス店の入口" loading="lazy"></dd></div>
+    <div class="infowrap"><dl class="info">
+      <div><dt>日時</dt><dd><span>2027年1月17日（日）</span> <span>10:30〜12:30</span></dd></div>
+      <div><dt>会場</dt><dd><span>TSUTAYA BOOKSTORE</span> <span>恵比寿ガーデンプレイス店</span><small><span>東京都渋谷区恵比寿4-20-7</span> <span>恵比寿ガーデンプレイス</span> <span>センタープラザ地下1階</span><span class="blk"></span><span>JR恵比寿駅から、</span><span>動く歩道（スカイウォーク）で</span><span>歩いて約5分</span></small></dd></div>
       <div><dt>著者2人と語る 心と体の相談ランチ会</dt><dd>ランチは13時〜<small><span>セミナーのあと、近くのお店へ移動します。</span> <span>お店は、お申し込みされた方に</span> <span>メールでお知らせします</span></small></dd></div>
       <div><dt>オンライン</dt><dd>Zoomで参加できます</dd></div>
     </dl>
+    <img class="venue" src="shop-gaikan.jpg" alt="TSUTAYA BOOKSTORE 恵比寿ガーデンプレイス店の入口" loading="lazy">
+    </div>
   </div>
 </section>
 
