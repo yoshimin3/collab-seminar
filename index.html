@@ -97,6 +97,16 @@ details p{font-size:17px;font-weight:600}summary{font-size:18px;font-weight:800}
 footer{font-size:14px;font-weight:600}
 .sticky a{font-size:19px;font-weight:800;font-family:"Hiragino Mincho ProN","Yu Mincho",serif}
 </style>
+<style>
+/* 主催カード: 写真左・文字中・本は右、文字を大きく */
+.speaker{display:grid;grid-template-columns:92px 1fr 74px;gap:14px;align-items:center;padding:16px 14px}
+.speaker .photo{width:92px;height:auto;aspect-ratio:3/4;border-radius:10px;object-fit:cover}
+.speaker .book{width:74px;margin:0;align-self:center}
+.speaker h3{font-size:26px;line-height:1.35}
+.speaker .role{font-size:17px;font-weight:700;line-height:1.6;margin:2px 0 8px}
+.speaker .bk{font-size:18px;font-weight:800;line-height:1.65}
+@media(min-width:640px){.speaker{grid-template-columns:120px 1fr 100px;gap:22px;padding:22px 24px}.speaker .photo{width:120px}.speaker .book{width:100px}.speaker h3{font-size:28px}.speaker .role{font-size:19px}.speaker .bk{font-size:20px}}
+</style>
 </head>
 <body>
 
@@ -136,20 +146,22 @@ footer{font-size:14px;font-weight:600}
   <div class="wrap">
     <h2>主催はこんな人</h2>
     <div class="speaker">
-      <div><img class="photo" src="hanawa.jpg" alt="塙 真弓"><img class="book" src="book_hanawa.png" alt="自分を愛することからすべてが始まる"></div>
+      <img class="photo" src="hanawa.jpg" alt="塙 真弓">
       <div>
         <h3>塙 真弓</h3>
         <div class="role"><span>感謝の心まんまるの会 代表</span> <span>自己肯定感ナビゲーター</span></div>
         <div class="bk"><span class="blk">著書</span><span>『自分を愛することから</span> <span>すべてが始まる』</span></div>
       </div>
+      <img class="book" src="book_hanawa.png" alt="自分を愛することからすべてが始まる">
     </div>
     <div class="speaker">
-      <div><img class="photo" src="yoshimi.jpg" alt="齋藤 好美"><img class="book" src="book_yoshimi.jpg" alt="魔法の比率は3:2:1 お弁当箱ダイエット"></div>
+      <img class="photo" src="yoshimi.jpg" alt="齋藤 好美">
       <div>
         <h3>齋藤 好美</h3>
         <div class="role">食べながら痩せるダイエットの専門家</div>
         <div class="bk"><span class="blk">著書</span><span>『魔法の比率は3:2:1</span> <span>お弁当箱ダイエット』</span></div>
       </div>
+      <img class="book" src="book_yoshimi.jpg" alt="魔法の比率は3:2:1 お弁当箱ダイエット">
     </div>
   </div>
 </section>
